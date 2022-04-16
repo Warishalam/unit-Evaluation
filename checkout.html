@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter Your Delivery Address</h1>
+    <form>
+        <input id="name" type="text" placeholder="Enter Your name">
+        <input id="number" type="number" placeholder="Enter your mobile number">
+        <p>Enter Your complete Address</p>
+        <input type="text" placeholder="Enter City">
+        <input type="text" placeholder="State">
+        <input type="number" placeholder="PinCode">
+        <input type="submit" value="Proceed to Payment">
+    </form>
+    
+</body>
+<script>
+    document.querySelector('form').addEventListener('submit',function(){
+        event.preventDefault();
+        var name=document.querySelector('#name');
+        var number=document.querySelector('#number');
+
+        
+            window.location.href='./payment.html';
+
+    
+        
+
+    });
+</script>
+
+</html>
+© 2022 GitHub, Inc.
+Terms
+Priv
